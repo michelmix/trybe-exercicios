@@ -2,10 +2,13 @@ h1 {
     font-size: "65px";
     color: orange;
     font-family: sans-serif;
+    text-align: center;
 }
 
 ul {
     background-color: aqua;
+    text-decoration: underline;
+    line-height: 25px;
 }
 
 .estilo-parágrafo-linha {
