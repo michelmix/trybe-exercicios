@@ -1,4 +1,4 @@
-const a = 4;
+/* const a = 4;
 const b = 2;
 console.log(a + b);
 console.log(a - b);
@@ -94,4 +94,61 @@ if (nota < 0 || nota > 100) {
     console.log("Nota E");
 } else {
     console.log("Nota F");
-} 
+};
+
+
+
+const const1 = 2;
+const const2 = 3;
+const const3 = 4;
+
+let numeroPar = false;
+
+if ((const1 % 2 === 0 || const2 % 2 === 0 || const3 % 3 === 0)) {
+    numeroPar = true
+};
+console.log(numeroPar);
+
+
+const constA = 2;
+const constB = 3;
+const constC = 4;
+
+let numeroImpar = false;
+
+if ((constA % 2 !== 0 || constB !== 0 || constC !== 0)) {
+    numeroImpar = true;    
+};
+console.log(numeroImpar);
+
+
+const custoProduto = 25;
+const valorVenda = 50;
+
+
+
+
+
+/*_______________________________________________________________________________________________________________
+1. Descubra a idade mínima
+Escreva um algoritmo que recebe a idade de Marina, Silvia e Iza.
+Imprima no terminal uma mensagem informando a pessoa mais jovem no formato:
+--------------------------------------------------
+"x é a pessoa mais jovem e possui y anos de idade"
+--------------------------------------------------  
+*/
+
+let idadeMarina = 30;
+let idadeSilvia = 10;
+let idadeIza = 40;
+
+let pessoaMaisJovem = "Essa é a pessoa mais jovem"
+
+if (idadeMarina < idadeSilvia && idadeMarina < idadeIza) {
+    console.log(pessoaMaisJovem);
+} else if (idadeSilvia < idadeMarina && idadeSilvia < idadeIza) {
+    console.log(pessoaMaisJovem);
+} else {
+    console.log(idadeIza);
+
+}
