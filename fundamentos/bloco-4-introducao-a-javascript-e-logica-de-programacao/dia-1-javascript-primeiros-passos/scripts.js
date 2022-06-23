@@ -1,4 +1,6 @@
-/* const a = 4;
+// 1
+
+const a = 4;
 const b = 2;
 console.log(a + b);
 console.log(a - b);
@@ -8,24 +10,32 @@ console.log(a % b);
 console.log(a + b);
 
 
+// 2
 const num1 = 10;
 const num2 = 20;
-console.log(num1 > num2);
+
+if (num1 > num2) {
+    console.log(num1);
+ } else {
+console.log(num2);
+ }
 
 
+//3 
 const x = 5;
 const y = 10;
 const z = 20;
 
 
 if (x > y && x > z) {
-  console.log('O maior número é: ' + x + ' (x)');
+  console.log('O maior número é:' + x);
 } else if (y > x && y > z) {
-  console.log('O maior número é: ' + y + ' (y)');
+  console.log('O maior número é:' + y);
 } else {
-  console.log('O maior número é: ' + z + ' (z)');
+  console.log('O maior número é:' + z);
 };
 
+//4
 
 const meuNumero = -5;
 
@@ -37,19 +47,26 @@ if (meuNumero > 0) {
     console.log("zero");
   };
 
+// 5
 
   const l1 = 20;
   const l2 = 70;
   const l3 = 80;
 
-  if (l1 + l2 + l3 === 180) {
+  let somaAngulos = l1 + l2 + l3;
+  let angulosPositivos = l1 > 0 && l2 > 0 && l3 > 0;
+
+if (angulosPositivos) {
+  if (somaAngulos === 180) {
     console.log("true");
-  } else if (l1 + l2 + l3 !== 180) {
+  } else {
     console.log("false");
+    };
   } else {
     console.log("Erro: Valor não encontrado");
-  };
+  }
   
+// 6
 
 const pecaXadrez = 'Rei';
 
@@ -78,6 +95,8 @@ const pecaXadrez = 'Rei';
   };
 
 
+// 7
+
 const nota = 60;
 
 if (nota < 0 || nota > 100) {
@@ -97,58 +116,38 @@ if (nota < 0 || nota > 100) {
 };
 
 
+// 8
 
-const const1 = 2;
+const const1 = 1;
 const const2 = 3;
-const const3 = 4;
+const const3 = 5;
 
 let numeroPar = false;
 
-if ((const1 % 2 === 0 || const2 % 2 === 0 || const3 % 3 === 0)) {
+if ((const1 % 2 === 0 || const2 % 2 === 0 || const3 % 2 === 0)) {
     numeroPar = true
 };
 console.log(numeroPar);
 
 
+
+// 9
+
 const constA = 2;
-const constB = 3;
+const constB = 2;
 const constC = 4;
 
 let numeroImpar = false;
 
-if ((constA % 2 !== 0 || constB !== 0 || constC !== 0)) {
+if ((constA % 2 !== 0 || constB % 2 !== 0 || constC % 2 !== 0)) {
     numeroImpar = true;    
 };
 console.log(numeroImpar);
 
+// 10
 
-const custoProduto = 25;
-const valorVenda = 50;
-
-
+// 11
 
 
 
-/*_______________________________________________________________________________________________________________
-1. Descubra a idade mínima
-Escreva um algoritmo que recebe a idade de Marina, Silvia e Iza.
-Imprima no terminal uma mensagem informando a pessoa mais jovem no formato:
---------------------------------------------------
-"x é a pessoa mais jovem e possui y anos de idade"
---------------------------------------------------  
-*/
 
-let idadeMarina = 30;
-let idadeSilvia = 10;
-let idadeIza = 40;
-
-let pessoaMaisJovem = "Essa é a pessoa mais jovem"
-
-if (idadeMarina < idadeSilvia && idadeMarina < idadeIza) {
-    console.log(pessoaMaisJovem);
-} else if (idadeSilvia < idadeMarina && idadeSilvia < idadeIza) {
-    console.log(pessoaMaisJovem);
-} else {
-    console.log(idadeIza);
-
-}
