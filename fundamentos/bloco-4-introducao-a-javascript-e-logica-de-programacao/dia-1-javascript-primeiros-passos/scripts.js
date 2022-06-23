@@ -146,6 +146,18 @@ console.log(numeroImpar);
 
 // 10
 
+const custoProduto = 1;
+const valorVenda = 3;
+
+let totalCustoProduto = custoProduto * 1.2;
+let lucro = (valorVenda - totalCustoProduto) * 1000;
+
+if (custoProduto < 0 || valorVenda < 0) {
+    console.log("Erro, valor inválido");
+} else {
+    console.log(lucro);
+}
+
 // 11
 
 
