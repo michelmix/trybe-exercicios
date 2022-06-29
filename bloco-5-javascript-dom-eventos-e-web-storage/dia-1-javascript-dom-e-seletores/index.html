@@ -77,21 +77,12 @@
        }
        corrigeH1();
 
-       /* function changeTextToUpperCase() {
-        let paragraph = document.getElementsByTagName('p');
-        for (let index = 0; index < paragraph.length; index += 1) {
-            paragraph[index].innerHTML = paragraph.innerHTML.toUpperCase();
-        }
-       }
-       changeTextToUpperCase(); */
-
-        function paragraphUpperCase() {
-         let paragraph = document.getElementsByTagName('p');
-         for (let index = 0; index < paragraph.length; index += 1) {
-         paragraph[index].innerHTML = paragraph.innerHTML.toUpperCase();
+       function paragraphUpperCase() {
+        let paragraph = document.getElementsByClassName('main-content')[0];
+        paragraph.innerText = paragraph.innerText.toUpperCase();
       }
-    }
-    paragraphUpperCase();
+    
+        paragraphUpperCase();
 
        function showParagraphs() {
         let paragraphs = document.getElementsByTagName('p');
@@ -101,13 +92,6 @@
     }
     showParagraphs();
     
-
-
-
-
-
-
-
     </script>
   </body>
 </html>
